@@ -1,14 +1,14 @@
 
-##Movement
+## Movement
 When calculating movement with the range tool, if you hit the `q` key it will allow you to make a 'waypoint' and calculate movement correctly.
 
-##Initiative
+## Initiative
 Ensure that your token is selected and this will roll your initiative and add it automatically to the initiative track
 ```
 %{selected|Roll-for-initiative}
 ```
 
-##Skill Checks
+## Skill Checks
 
 Token macro for drop down of skills
 ```
@@ -20,7 +20,7 @@ The following will be used to roll
 [[1d20 + [[@{select|SkillName}]] + ?{Modifier?&#124;0&#125;]]
 ```
 
-##Saves
+## Saves
 Token macro for rolling all saves:
 ```
 &{template:pf_check}{{name=Saves}}{{check=[[1d20+@{Fort}]] Fort [[1d20+@{Ref}]] Ref [[1d20+@{Will}]] Will }} {{foo=@{save-notes}}}
